@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fazer Login</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Fazer Login</h1>
+        <form id="loginForm">
+            <label for="loginUsername">Nome de Usuário ou Email:</label>
+            <input type="text" id="loginUsername" name="loginUsername" required>
+
+            <label for="loginPassword">Senha:</label>
+            <input type="password" id="loginPassword" name="loginPassword" required>
+
+            <button type="submit">Entrar</button>
+        </form>
+        <p id="mensagemErroLogin" class="mensagem-erro"></p>
+        <p>Não tem uma conta? <a href="index.html">Crie sua conta</a></p>
+    </div>
+
+    <script src="js/fazer-login.js"></script>
+</body>
+</html>
