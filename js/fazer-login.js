@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
      // **IMPORTANTE:** Configure a URL da sua API Go aqui.
 // Substitua 'https://sua-api-no-render.com' pela URL real da sua API no Render
 const API_BASE_URL = 'https://beck-end-oafv.onrender.com'; // <--- ATUALIZE AQUI!
-const API_REGISTRO_ENDPOINT = `${API_BASE_URL}/auth/login`; // ou /auth/login, /api/perfil
+const API_LOGIN_ENDPOINT = `${API_BASE_URL}/auth/login`; // Este é o endpoint correto para login
 
     loginForm.addEventListener('submit', async (event) => {
         event.preventDefault();
