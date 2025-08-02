@@ -1,5 +1,115 @@
+/* Importação de fonte do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* Estilos globais e de corpo */
 body {
-    font-family: Arial, sans-serif;
-    margin: 20px;
-    background-color: #f0f0f0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f2f5; /* Fundo cinza claro */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    color: #333;
+}
+
+/* Estilo do container principal */
+.container {
+    background-color: #fff; /* Fundo branco */
+    padding: 40px;
+    border-radius: 12px; /* Cantos arredondados */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+h1 {
+    font-weight: 600; /* Fonte mais pesada para o título */
+    color: #1a1a1a;
+    margin-bottom: 25px;
+}
+
+/* Estilo dos formulários */
+form {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+label {
+    font-weight: 400;
+    margin-bottom: 8px;
+    color: #555;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-sizing: border-box; /* Garante que o padding não afete a largura total */
+    transition: border-color 0.3s ease;
+}
+
+/* Efeito de foco nos campos de input */
+input:focus {
+    border-color: #007bff; /* Cor azul suave ao focar */
+    outline: none; /* Remove o contorno padrão do navegador */
+}
+
+/* Estilo do botão */
+button {
+    background-color: #007bff;
+    color: white;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3; /* Escurece o botão ao passar o mouse */
+}
+
+/* Estilo dos links */
+a {
+    color: #007bff;
+    text-decoration: none; /* Remove o sublinhado padrão */
+    font-weight: 400;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #0056b3; /* Mudar a cor ao passar o mouse */
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+}
+
+/* Estilos de mensagens de erro e texto secundário */
+.mensagem-erro {
+    color: #dc3545; /* Vermelho para mensagens de erro */
+    margin-top: -10px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+p {
+    margin-top: 20px;
+    color: #777;
+}
+
+/* Estilo para a página "Minha Conta" */
+#mensagemBoasVindas, #informacoesUsuario {
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 480px) {
+    .container {
+        padding: 30px 20px;
+    }
 }
