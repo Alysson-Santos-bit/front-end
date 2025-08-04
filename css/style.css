@@ -91,7 +91,7 @@ a:hover {
 /* Estilos de mensagens de erro e texto secundário */
 .mensagem-erro {
     color: #dc3545; /* Vermelho para mensagens de erro */
-    margin-top: -10px;
+    
     margin-bottom: 20px;
     text-align: center;
 }
